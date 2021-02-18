@@ -1,8 +1,23 @@
 import React from "react";
+import './App.css';
+import Header from './components/header'
+//import Main from './components/main'
+//import Footer from './components/footer' 
+import Button from './components/buttons'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
-import "./App.css";
 
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <main className="main">
+        <Button /> 
+      
+      </main> 
+      
+    </div>
+ 
 
 function App() {
   return (
