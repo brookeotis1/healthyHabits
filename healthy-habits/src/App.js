@@ -4,8 +4,8 @@ import Header from './components/header'
 //import Main from './components/main'
 //import Footer from './components/footer' 
 import Button from './components/buttons'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Signup from "./pages/Signup";
+//import { BrowserRouter as Router, Route } from "react-router-dom";
+//import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -17,11 +17,16 @@ function App() {
       </main> 
       
     </div>
- 
 
-function App() {
-  return (
-    <Router>
+);
+}
+
+export default App; 
+
+
+
+
+    /*<Router>
       <div>
 
 
@@ -33,4 +38,6 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
+
+*/

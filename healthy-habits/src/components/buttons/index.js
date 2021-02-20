@@ -13,7 +13,7 @@ function Button() {
         My Goals
         </button>
         </Link>
-    <Link to="/newGoals">
+    <Link to="newGoal.js">
         <button variant="secondary" size="lg" block>
         New Goals
         </button>

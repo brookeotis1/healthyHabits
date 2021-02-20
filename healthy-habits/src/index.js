@@ -5,6 +5,9 @@ import './index.css';
 import App from './App';
 
 
+
+
+
 ReactDOM.render((
   <BrowserRouter>
     <App /> {/* The various pages will be displayed by the `Main` component. */}
@@ -12,7 +15,7 @@ ReactDOM.render((
   ), document.getElementById('root')
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
