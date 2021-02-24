@@ -2,10 +2,6 @@ import React, { Component, useState, Link } from "react";
 import DisplayGoal from "../components/Card/GoalCard";
 
 
-function PullGoals(){
-    const [savedGoals, setSavedGoals] = useState([])
-}
-
 class Profile extends Component {
     render() {
         return(
@@ -13,7 +9,7 @@ class Profile extends Component {
                 <h1>Profile Page</h1>
             
        <DisplayGoal
-       header={savedGoals}
+       header={"test header"}
        title={"test title"}
        text={"test text"}
        />
