@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class Checkin extends Component {
+class Progress extends Component {
     render() {
         return(
             <div>
-                <h1>Check-in Page</h1>
+                <h1>Progress Page</h1>
             </div>
         )
     }
 }
 
-export default Checkin;
+export default Progress;
