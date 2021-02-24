@@ -16,7 +16,6 @@ import Goal from "./pages/newGoal";
 
 function App() {
   const [savedGoals, setSavedGoals] = useState([])
-  console.log("savedGoals: "+ savedGoals)
   return (
     <Router>
     <div className="App">
@@ -24,10 +23,8 @@ function App() {
       <main className="main">
         <Button /> 
         <NavTabs />
-        <Route exact path="/create" render={ (props) => <Goal {...props} savedGoals = {savedGoals} setSavedGoals = {setSavedGoals}/>} />  
-<div>
-  <p>{savedGoals}</p>
-</div>
+        <Route exact path="/create" component={Goal} />  
+
       </main> 
       
     </div>
