@@ -1,12 +1,15 @@
-import React, {useState} from "react";
+import React, { Component } from "react";
 import './App.css';
-import Header from './components/header'
+import Header from './components/header/navbar'
 //import Main from './components/main'
 //import Footer from './components/footer' 
-import Button from './components/buttons'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavTabs from "./pages/NavTabs";
-import Goal from "./pages/newGoal";
+//import Button from './components/buttons'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+//import NavTabs from "./pages/NavTabs";
+//import Goal from "./pages/newGoal";
+import Main from "./components/main";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 //import Signup from "./pages/Signup";
 
@@ -14,25 +17,21 @@ import Goal from "./pages/newGoal";
 
 //state that houses form details (pull from state to render on page)
 
-function App() {
-  const [savedGoals, setSavedGoals] = useState([])
-  console.log("savedGoals: "+ savedGoals)
-  return (
-    <Router>
-    <div className="App">
-      <Header />
-      <main className="main">
-        <Button /> 
-        <NavTabs />
-        <Route exact path="/create" render={ (props) => <Goal {...props} savedGoals = {savedGoals} setSavedGoals = {setSavedGoals}/>} />  
-<div>
-  <p>{savedGoals}</p>
-</div>
-      </main> 
-      
-    </div>
-    </Router>
-);
+class App extends Component {
+  
+  render() {
+
+    return (
+      <div className="App">
+        <Header/>
+        <main className="main">
+       <Main />
+        
+        </main> 
+      </div>
+    );
+  }
+
 }
 
 export default App; 
