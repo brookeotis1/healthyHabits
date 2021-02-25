@@ -1,6 +1,6 @@
 
 html { 
-  background: url(./components/pexels-craig-adderley-1563356.jpg) no-repeat center center fixed; 
+background-color: red; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -35,4 +35,18 @@ main   {
   padding-top: 25px; 
 } 
 
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
