@@ -12,7 +12,7 @@ const Goal = (props) => (
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
-        props.setSavedGoals(JSON.stringify(values, null, 2));
+        console.log(JSON.stringify(values, null, 2));
           }}
     >
       {formik => (

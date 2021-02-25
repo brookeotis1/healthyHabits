@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 //import Goal from "./pages/newGoal";
 import Main from "./components/main";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DisplayGoal from "./components/Card/GoalCard.js"
 
 
 //import Signup from "./pages/Signup";
@@ -25,8 +26,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <main className="main">
-       <Main />
-        
+      <Main />        
         </main> 
       </div>
     );
