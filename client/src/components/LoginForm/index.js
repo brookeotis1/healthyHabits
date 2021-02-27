@@ -2,6 +2,7 @@ import React from 'react'
 import { Formik, Form} from 'formik'
 import * as Yup from 'yup'
 import FormikControl from '../Formik/FormikControl'
+import './login.css'
 
 function LoginForm() {
     const initialValues = {
