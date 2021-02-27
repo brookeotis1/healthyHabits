@@ -99,7 +99,8 @@
             </div>
 
             <div class="col-8 center-text">
-                <img src="./src/images/logo.png" alt="W01: FHIR Starter - Building your first SMART on FHIR app" />
+            <!--insert pic here >
+                <img src=". " />
             </div>
         </div>
     </div>
