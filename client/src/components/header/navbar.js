@@ -14,7 +14,7 @@ function Header () {
       <Nav className="mr-auto">
         <Nav.Link href="/profile">Profile</Nav.Link>
           <NavDropdown title="Goals" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="/create">Create New Goal</NavDropdown.Item>
+          <NavDropdown.Item href="/goals">Create/View Goals</NavDropdown.Item>
           <NavDropdown.Item href="/checkin">Check-In</NavDropdown.Item>
           <NavDropdown.Item href="/progress">Progress</NavDropdown.Item>
           </NavDropdown>
