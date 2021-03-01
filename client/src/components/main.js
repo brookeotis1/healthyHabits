@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../pages/Profile';
+import { Profile } from '../pages/Profile';
 import { Switch, Route} from 'react-router-dom';
 import Goals from "../pages/Goals";
 import Checkin from "../pages/Checkin";
