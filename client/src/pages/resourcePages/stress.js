@@ -11,8 +11,12 @@ const Stress = () => {
           imageSrc1="../../images/SNS.jpg"
           imageAlt1="Sympathetic Nervous System"
           paragraph4= "Understanding how to keep stress in healthy levels and regulate the amount of stress that we experience is crucial to our success."
-    
-        />
+    heading2="Window of Tolerance"
+    paragraph6= "A person's window of tolerance is their zone for optimal performance. It refers to a person's ability to withstand stress. When people are within their window of tolerance, they can meet the demands of everyday life easily. Their brain is functioning properly and can effectively process incoming information."
+    paragraph7="Whenever someone moves outside of the window of tolerance, their prefrontal cortex is deactivated and they are less equipped to process normal and stressful events productively. Everyone has a different window of tolerance and will respond to situations differently."
+    imageSrc2="../../images/window.jpg"
+    imageAlt2="Window of Tolerance"
+    />
     )
 }
 

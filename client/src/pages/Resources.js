@@ -4,7 +4,8 @@ import Jumbotron from "../components/Jumbotron";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import {Link} from "react-router-dom";
-import stress from "../images/stress.jpg"
+import stress from "../images/stress.jpg";
+import goal from "../images/goal.jpg"
 
 function Resources() {
   return (
@@ -28,13 +29,13 @@ function Resources() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img src={goal} size="100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>SMART Goals</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+        A large part of acheiving goals is knowing how to define your goals.
       </Card.Text>
+      <Card.Footer>  <Link to={"/smart"}>Learn More About SMART Goals</Link></Card.Footer>
     </Card.Body>
   </Card>
   <Card>

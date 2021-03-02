@@ -7,6 +7,7 @@ import Progress from "../pages/Progress";
 import Notes from "../pages/Notes";
 import Resources from "../pages/Resources"
 import Stress from "../pages/resourcePages/stress"
+import Smart from "../pages/resourcePages/SMART"
 // import NoMatch from "../pages/NoMatch";
 
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
             <Route path="/goals/:id" component= {Notes}></Route>
             <Route path="/resources" component= {Resources}></Route>
             <Route path="/stress" component= {Stress}></Route>
+            <Route path="/smart" component= {Smart}></Route>
             {/* <Route component= {NoMatch}></Route> */}
         </Switch>
 
