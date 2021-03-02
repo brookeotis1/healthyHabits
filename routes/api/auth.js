@@ -2,7 +2,7 @@ const router = require("express").Router();
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const config = require("../../config/database");
-const { User } = require("../../app/models");
+const { User } = require("../../models");
 
 genToken = (user) => {
   return jwt.sign(

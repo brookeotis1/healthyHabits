@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const passport = require("passport");
-const { User } = require("../../app/models");
-const { getToken, decode } = require("../../app/services/token");
-const { withAuth } = require('../../app/middleware/auth')
-const usersController = require("../../app/controllers/usersController");
+const { User } = require("../../models");
+const { getToken, decode } = require("../../services/token");
+const { withAuth } = require('../../middleware/auth')
+const usersController = require("../../controllers/userController");
 
 router.get(
   "/profile",

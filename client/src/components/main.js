@@ -6,6 +6,8 @@ import Checkin from "../pages/Checkin";
 import Progress from "../pages/Progress";
 import Notes from "../pages/Notes";
 // import NoMatch from "../pages/NoMatch";
+import { Login } from "../pages/Login";
+import { Register } from "../pages/Register";
 
 const Main = () => {
 
@@ -16,6 +18,8 @@ const Main = () => {
             <Route path="/checkin" component= {Checkin}></Route>
             <Route path="/progress" component= {Progress}></Route>
             <Route path="/goals/:id" component= {Notes}></Route>
+            <Route path="/login" component= {Login}></Route>
+            <Route path="/register" component= {Register}></Route>
             {/* <Route component= {NoMatch}></Route> */}
         </Switch>
 

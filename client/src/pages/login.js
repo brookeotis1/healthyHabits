@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { apiAuth } from "../utils/api";
-import { useAuth } from "../utils/context";
+//import API from "../utils/API"
+import { apiAuth } from "../utils/api/auth";
+import { useAuth } from "../utils/context/AuthContext";
 import {
   Container,
   Row,
@@ -10,7 +11,7 @@ import {
   Label,
   Input,
   Button,
-} from "../components";
+} from "../components/Auth";
 
 export function Login() {
   const [state, setState] = useState({
