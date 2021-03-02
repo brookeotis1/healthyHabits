@@ -18,6 +18,7 @@ function Header () {
           <NavDropdown.Item href="/checkin">Check-In</NavDropdown.Item>
           <NavDropdown.Item href="/progress">Progress</NavDropdown.Item>
           </NavDropdown>
+          <Nav.Link href="/resources">Resources</Nav.Link>
       </Nav>
       <Nav>
         <Nav.Link href="/login">Login</Nav.Link>
