@@ -1,16 +1,47 @@
-import React, { Component, useState, Link } from "react";
+import React, { useState, useEffect } from "react";
+import { apiUsers } from "../utils/api/users";
+import { apiAuth} from "../utils/api/auth";
+import { useAuth } from "../utils/context";
+import { Container, Row, Column } from "../components/Auth";
 
+export function Profile() {
+  const [state, setState] = useState({
+    user: null,
+  });
 
+  const { auth, setAuth } = useAuth();
 
-class Profile extends Component {
-    render() {
-        return(
-            <div>
-                <h1>Profile Page</h1>
-            
-             </div> 
-        )
+  useEffect(() => {
+    if (auth?.user) {
+      setState({ ...state, user: auth.user });
+    } else {
+      apiUsers
+        .getProfile()
+        .then((res) => {
+          if (res.data._id) {
+            // For local read/update/delete
+            setState({ ...state, user: res.data });
+            // For local auth context
+            setAuth({ ...auth, user: res.data });
+            // For persistent auth
+            apiAuth.setAuth({ ...auth, user: res.data });
+          }
+        })
+        .catch((err) => {
+          // Choose your error notification
+          // console.log("err", err);
+        });
     }
-}
+  }, []);
 
-export default Profile;
+  return (
+    <Container className="mt-5">
+      <Row>
+        <Column>
+          <h1>Profile</h1>
+          {state.user && <p>Welcome {state.user.username}</p>}
+        </Column>
+      </Row>
+    </Container>
+  );
+}
