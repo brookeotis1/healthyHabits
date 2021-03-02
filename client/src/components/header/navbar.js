@@ -20,7 +20,8 @@ function Header () {
           </NavDropdown>
       </Nav>
       <Nav>
-        <Nav.Link href="#deets">Login</Nav.Link>
+        <Nav.Link href="/login">Login</Nav.Link>
+        <Nav.Link href="/register">Register</Nav.Link>
         <Nav.Link eventKey={2} href="#memes">
           Logout
         </Nav.Link>
