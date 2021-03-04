@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export function Button(props) {
+export function AuthButton(props) {
   const { children, className, ...attributes } = props;
 
   const classes = classNames("btn", className);

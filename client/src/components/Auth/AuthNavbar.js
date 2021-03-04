@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { apiAuth } from "../../utils/api/auth";
-import { useAuth } from "../../utils/context/";
-import { Container } from "./Container";
+import { useAuth } from "../../utils/context";
+import { AuthContainer } from "./AuthContainer";
 
-export function Navbar() {
+export function AuthNavbar() {
   const { auth, setAuth } = useAuth();
 
   function _logout() {
@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Container>
+      <AuthContainer>
         <Link className="navbar-brand" to="/">
           Express React Passport
         </Link>
@@ -92,7 +92,7 @@ export function Navbar() {
             )}
           </ul>
         </div>
-      </Container>
+      </AuthContainer>
     </nav>
   );
 }

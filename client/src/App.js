@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { apiAuth } from "./utils/api/index";
 import { useAuth } from "./utils/context/index";
 import { PrivateRoute } from "./components/Auth/PrivateRoute";
-import { Login } from "./pages/login";
-import { Register } from "./pages/register"
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register"
 import { Profile } from "./pages/Profile"
-import Main from "./components/main";
+//import Main from "./components/main";
 import Header from "./components/header/navbar";
 import Goals from "./pages/Goals";
 import Checkin from "./pages/Checkin";
@@ -15,6 +15,7 @@ import Notes from "./pages/Notes";
 import Resources from "./pages/Resources"
 import Stress from "./pages/resourcePages/stress"
 import Smart from "./pages/resourcePages/SMART"
+
 
 
 

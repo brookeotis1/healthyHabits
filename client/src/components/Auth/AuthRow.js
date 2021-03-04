@@ -1,11 +1,11 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export function Column(props) {
+export function AuthRow(props) {
   const { children, className, ...attributes } = props
 
   const classes = classNames(
-    'col',
+    'row',
     className
   )
 

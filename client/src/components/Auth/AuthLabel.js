@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export function Label(props) {
+export function AuthLabel(props) {
   const { for: htmlFor, children, className, ...attributes } = props;
 
   const classes = classNames('mb-2', className);

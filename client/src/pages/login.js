@@ -4,13 +4,13 @@ import { useHistory } from "react-router-dom";
 import { apiAuth } from "../utils/api/auth";
 import { useAuth } from "../utils/context/AuthContext";
 import {
-  Container,
-  Row,
-  Column,
-  FormGroup,
-  Label,
-  Input,
-  Button,
+  AuthContainer,
+  AuthRow,
+  AuthColumn,
+  AuthFormGroup,
+  AuthLabel,
+  AuthInput,
+  AuthButton,
 } from "../components/Auth";
 
 export function Login() {
@@ -52,35 +52,35 @@ export function Login() {
   }
 
   return (
-    <Container className="mt-5">
-      <Row>
-        <Column className="col-md-6 offset-md-3">
+    <AuthContainer className="mt-5">
+      <AuthRow>
+        <AuthColumn className="col-md-6 offset-md-3">
           <h1 className="mb-4">Login</h1>
           <form onSubmit={_handleSubmit}>
-            <FormGroup>
-              <Label>Email</Label>
-              <Input
+            <AuthFormGroup>
+              <AuthLabel>Email</AuthLabel>
+              <AuthInput
                 type="text"
                 name="username"
                 value={state.username}
                 onChange={_handleChange}
               />
-            </FormGroup>
-            <FormGroup>
-              <Label>Password</Label>
-              <Input
+            </AuthFormGroup>
+            <AuthFormGroup>
+              <AuthLabel>Password</AuthLabel>
+              <AuthInput
                 type="password"
                 name="password"
                 value={state.password}
                 onChange={_handleChange}
               />
-            </FormGroup>
-            <FormGroup className="text-right">
-              <Button className="btn-primary">Submit</Button>
-            </FormGroup>
+            </AuthFormGroup>
+            <AuthFormGroup className="text-right">
+              <AuthButton className="btn-primary">Submit</AuthButton>
+            </AuthFormGroup>
           </form>
-        </Column>
-      </Row>
-    </Container>
+        </AuthColumn>
+      </AuthRow>
+    </AuthContainer>
   );
 }
