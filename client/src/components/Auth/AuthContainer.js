@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export function Container(props) {
+export function AuthContainer(props) {
   const { children, className, ...attributes } = props
 
   const classes = classNames(

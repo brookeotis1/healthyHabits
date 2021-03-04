@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { apiUsers } from "../utils/api/users";
 import { apiAuth} from "../utils/api/auth";
 import { useAuth } from "../utils/context";
-import { Container, Row, Column } from "../components/Auth";
+import { AuthContainer, AuthRow, AuthColumn } from "../components/Auth";
 
 export function Profile() {
   const [state, setState] = useState({
@@ -35,13 +35,13 @@ export function Profile() {
   }, []);
 
   return (
-    <Container className="mt-5">
-      <Row>
-        <Column>
+    <AuthContainer className="mt-5">
+      <AuthRow>
+        <AuthColumn>
           <h1>Profile</h1>
           {state.user && <p>Welcome {state.user.username}</p>}
-        </Column>
-      </Row>
-    </Container>
+        </AuthColumn>
+      </AuthRow>
+    </AuthContainer>
   );
 }
