@@ -15,6 +15,7 @@ import Notes from "./pages/Notes";
 import Resources from "./pages/Resources"
 import Stress from "./pages/resourcePages/stress"
 import Smart from "./pages/resourcePages/SMART"
+//import Water from "./pages/Water"
 
 
 
@@ -52,6 +53,7 @@ function App() {
           <Route exact path="/resources" component={Resources}></Route>
           <Route exact path="/stress" component={Stress}></Route>
           <Route exact path="/smart" component={Smart}></Route>
+          {/* <Route exact path="/water" component={Water}></Route> */}
           <PrivateRoute exact path="/profile" component={Profile} />
         </Switch>
       </div>
