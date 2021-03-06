@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { apiAuth } from "./utils/api/index";
 import { useAuth } from "./utils/context/index";
 import { PrivateRoute } from "./components/Auth/PrivateRoute";
-import { Login } from "./pages/Login";
-import { Register } from "./pages/Register"
+import { Login } from "./pages/login";
+import { Register } from "./pages/register"
 import { Profile } from "./pages/Profile"
 //import Main from "./components/main";
 import Header from "./components/header/navbar";
