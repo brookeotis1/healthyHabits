@@ -16,6 +16,8 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+    console.log("line19 goalscontroller.js")
+   console.log(req.body)
     db.Goal
       .create(req.body)
       .then(dbModel => res.json(dbModel))

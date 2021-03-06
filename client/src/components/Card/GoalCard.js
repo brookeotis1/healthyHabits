@@ -15,7 +15,6 @@ export default ({
             <Card.Body>
               <Card.Title>{title}</Card.Title>
               <Card.Text>{text}</Card.Text>
-              <Button variant="primary" link="/progress">Track Progress</Button>
             </Card.Body>
             </>
   );

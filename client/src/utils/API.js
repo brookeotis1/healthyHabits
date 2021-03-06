@@ -5,7 +5,7 @@ export default {
   getGoals: function() {
     return axios.get("/api/goals");
   },
-  // Gets the goal with the given id
+  // Gets the goal with the given id (notes)
   getGoal: function(id) {
     return axios.get("/api/goals/" + id);
   },
@@ -15,6 +15,7 @@ export default {
   },
   // Saves a goal to the database
   saveGoal: function(goalData) {
+    console.log("API line 18")
     console.log(goalData);
     return axios.post("/api/goals", goalData, 
     );
