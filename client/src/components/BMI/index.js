@@ -5,8 +5,8 @@ class BMI extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        height: 170,
-        weight: 65,
+        height: 200,
+        weight: 80,
         bmi: 22.49,
         bmiClass: 'Normal'
       }
