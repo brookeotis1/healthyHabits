@@ -3,7 +3,8 @@ import { apiUsers } from "../utils/api/users";
 import { apiAuth} from "../utils/api/auth";
 import { useAuth } from "../utils/context";
 import { AuthContainer, AuthRow, AuthColumn } from "../components/Auth";
-import BMI from "../components/BMI"
+import BMI from "../components/BMI";
+import ProfContainer from "../components/ProfContainer";
 
 export function Profile() {
   const [state, setState] = useState({
@@ -45,6 +46,7 @@ export function Profile() {
         </AuthColumn>
       </AuthRow>
     </AuthContainer>
+    <ProfContainer />
     <BMI />
     </>
   );
