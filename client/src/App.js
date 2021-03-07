@@ -37,6 +37,8 @@ function App() {
     return null;
   }
 
+  
+
   return (
     <Router>
       <div>
@@ -53,9 +55,11 @@ function App() {
           <Route exact path="/stress" component={Stress}></Route>
           <Route exact path="/smart" component={Smart}></Route>
           <PrivateRoute exact path="/profile" component={Profile} />
+          
         </Switch>
       </div>
     </Router>
+    
   );
 }
 
