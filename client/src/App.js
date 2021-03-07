@@ -47,7 +47,7 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/goals" component={Goals}></Route>
           <Route exact path="/checkin" component={Checkin}></Route>
-          <Route exact path="/progress" component={Progress}></Route>
+          <Route exact path="/progress" component={Progress}></Route> 
           <Route exact path="/goals/:id" component={Notes}></Route>
           <Route exact path="/resources" component={Resources}></Route>
           <Route exact path="/stress" component={Stress}></Route>
