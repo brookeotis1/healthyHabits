@@ -3,6 +3,8 @@ import { apiUsers } from "../utils/api/users";
 import { apiAuth} from "../utils/api/auth";
 import { useAuth } from "../utils/context";
 import { AuthContainer, AuthRow, AuthColumn } from "../components/Auth";
+import ProfContainer from "../components/ProfileContainer";
+import BMI from "../components/BMI";
 //import axios from "axios";
 
 // //random inspirational quote API
@@ -66,6 +68,8 @@ export function Profile() {
         </AuthColumn>
       </AuthRow>
     </AuthContainer>
+    <ProfContainer />
+    <BMI />
     {/* <div id="quoteHolder"></div> */}
     </div>
   );
