@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { apiAuth } from "./utils/api/index";
 import { useAuth } from "./utils/context/index";
 import { PrivateRoute } from "./components/Auth/PrivateRoute";
-import { Login } from "./pages/login";
-import { Register } from "./pages/register"
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register"
 import { Profile } from "./pages/Profile"
 //import Main from "./components/main";
 import Header from "./components/header/navbar";
@@ -45,10 +45,17 @@ function App() {
           <Route exact path="/" component={Login} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+
           <Route exact path="/goals" component={Goals}></Route>
           <Route exact path="/checkin" component={Checkin}></Route>
           <Route exact path="/progress" component={Progress}></Route> 
           <Route exact path="/goals/:id" component={Notes}></Route>
+
+          //<PrivateRoute exact path="/goals" component={Goals} />
+         // <PrivateRoute exact path="/checkin" component={Checkin} />
+          //<PrivateRoute exact path="/progress" component={Progress} />
+         // <PrivateRoute exact path="/goals/:id" component={Notes} />          
+
           <Route exact path="/resources" component={Resources}></Route>
           <Route exact path="/stress" component={Stress}></Route>
           <Route exact path="/smart" component={Smart}></Route>
