@@ -140,7 +140,8 @@ handleChange(event) {
  */ 
 
 import React, { Component } from "react";
-import {  Bar } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
+import Jumbotron from "../components/Jumbotron";
 
 
 export default class App extends Component {
@@ -188,6 +189,10 @@ export default class App extends Component {
         const { data, dataPie } = this.state;
         console.log(dataPie);
         return (
+            <>
+            <Jumbotron>
+            <h1>Goal Progress</h1>
+          </Jumbotron>
             <React.Fragment>
                 <input type="number"
                     value={this.state.first}
@@ -197,10 +202,10 @@ export default class App extends Component {
                     value={this.state.second}
                     name="second" onChange={(evt) => this.handleChange(evt)} />
                 <button onClick={() => this.handleSubmit()}>add data to chart</button>
-                <h1>My Goals Progress</h1>
+                {/* <h1>My Goals Progress</h1> */}
                 <Bar data={dataPie} />
             </React.Fragment>
-
+            </>     
         )
     }
 }
