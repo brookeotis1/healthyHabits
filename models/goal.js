@@ -5,7 +5,7 @@ const goalSchema = new Schema({
   title: { type: String },
   measurement: { type: String},
   duration: { type: String },
-  notes: {type: String},
+  notes: String,
   date: { type: Date, default: Date.now }
 });
 

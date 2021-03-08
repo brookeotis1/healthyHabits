@@ -3,28 +3,7 @@ import { apiUsers } from "../utils/api/users";
 import { apiAuth} from "../utils/api/auth";
 import { useAuth } from "../utils/context";
 import { AuthContainer, AuthRow, AuthColumn } from "../components/Auth";
-//import axios from "axios";
 
-// //random inspirational quote API
-// const options = {
-//   method: 'GET',
-//   url: 'https://quotejoy.p.rapidapi.com/random',
-//   headers: {
-//     'x-rapidapi-key': '617a4f066cmsh0a311780b1b6d9cp1ada08jsna7edb4fc2985',
-//     'x-rapidapi-host': 'quotejoy.p.rapidapi.com'
-//   }
-// };
-
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-//   let quote = response.quote;
-//   let source = response.source;
-//   let randomQuote = document.createElement("blockquote");
-//   randomQuote.id = "randomQuote";
-//   randomQuote.innerHTML = quote + "-" + source;
-// }).catch(function (error) {
-// 	console.error(error);
-// });
 
 export function Profile() {
   const [state, setState] = useState({
