@@ -48,15 +48,15 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
 
-          {/* <Route exact path="/goals" component={Goals}></Route>
+          <Route exact path="/goals" component={Goals}></Route>
           <Route exact path="/checkin" component={Checkin}></Route>
           <Route exact path="/progress" component={Progress}></Route> 
-          <Route exact path="/goals/:id" component={Notes}></Route> */}
-
+          <Route exact path="/goals/:id" component={Notes}></Route>
+{/* 
           <PrivateRoute exact path="/goals" component={Goals} />
           <PrivateRoute exact path="/checkin" component={Checkin} />
           <PrivateRoute exact path="/progress" component={Progress} />
-          <PrivateRoute exact path="/goals/:id" component={Notes} />          
+          <PrivateRoute exact path="/goals/:id" component={Notes} />           */}
 
           <Route exact path="/resources" component={Resources}></Route>
           <Route exact path="/stress" component={Stress}></Route>
